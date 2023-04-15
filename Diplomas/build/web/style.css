@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+html{
+/*background-image: url(./xd.png );
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background: radial-gradient(circle, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.5) 100%);
+color:fff;*/
+background-color: #fff;
+}
+
+body{
+  text-align:center;
+}
+
+h1{
+font-family: 'Secular One', sans-serif;
+  margin:2.5rem auto 0.5rem;
+  margin-left: 33%;
+  font-size: 30px;
+  color: #333333;
+  margin-top: 1%;
+}
+/*header*/
+header {
+  background-color: #0374B5;
+  padding: 20px;
+  display: flex ;
+  justify-content: space-between;
+  align-items: center center;
+  margin-bottom: 20px;
+  /*background: radial-gradient(circle, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.5) 100%);
+  box-shadow: 0 1px 5px rgb(79, 71, 80);*/
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  animation: rotar 2s linear infinite;
+}
+/*animacion para rotar logo*/
+@keyframes rotar{
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*hover para agrandar */
+.logo:hover{
+  transform: scale(1.5);
+}
+
+/*classe para los from*/
+#survey-form{
+ background-color: rgba(0, 0, 0, .4);
+display:inline-flex;
+flex-direction:column;
+padding:2.5rem 0.625rem;
+border-radius:5px;
+color:white;
+}
+
+/*configuracion de nombre mail  edad y dropdown*/
+.grupo{
+  display:block;
+  margin:0;
+    padding: 0.375rem 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;}
+
+.grupo input, .grupo #dropdown{
+display: block;
+    width: 100%;
+    height: 2.375rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+  
+label{
+  display:flex;
+/*flex-direction: column; */
+ align-items:center;
+  font-size:1.125rem;
+  margin-bottom:0.5rem;}
+
+.grupo label{
+    flex-direction: column; 
+  }
+/* Fin de configuración de nombre mail edad y dropdown*/
+
+
+/*configuración de seleccion única*/
+.sel label, .sel p{
+  display:flex;
+  padding:0.2rem
+}
+
+.sel-3 label, .sel-3 p{
+  display:flex;
+  padding:0.2rem
+}
+.sel-4 label, .sel-4 p{
+  display:flex;
+  padding:0.2rem
+}
+.sel-5 label, .sel-5 p{
+  display:flex;
+  padding:0.2rem
+}
+
+/*FIN de configuración de seleccion única*/
+
+/*Configuración de selección multiple*/
+.sel-2 label{
+  display:flex;
+  padding:0.2rem
+}
+/*Fin de Configuración de selección multiple*/
+textarea{
+  height:4rem;
+}
+
+/*Configuración de boton de submit*/
+.boton{
+  margin:1rem 0;
+  padding:0.2rem;
+  color:white;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  
+}
+ a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* boton para validar el correo*/
+button[type="submit"] {
+  background-color: #4CAF50;  
+  color: #FFFFFF;  
+  padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #3E8E41;
+    }
+
+
+/*configuracion del footer*/
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.seccion {
+  width: 30%;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
+
+#imprimir {
+  background-color: #4CAF50; /* color de fondo */
+  border: none; /* sin borde */
+  color: white; /* color del texto */
+  padding: 12px 24px; /* tamaño del botón */
+  text-align: center; /* centrado del texto */
+  text-decoration: none; /* sin subrayado */
+  display: inline-block; /* en línea con otros elementos */
+  font-size: 16px; /* tamaño del texto */
+  margin: 10px; /* margen alrededor del botón */
+  cursor: pointer; /* cambio de cursor al pasar el mouse */
+}
+
+#enviarCorreo {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  border: none; /* Eliminar borde */
+  color: white; /* Color del texto del botón */
+  padding: 15px 32px; /* Ajustar el tamaño del botón */
+  text-align: center; /* Alinear el texto al centro */
+  text-decoration: none; /* Eliminar subrayado */
+  display: inline-block; /* Mostrar el botón como bloque */
+  font-size: 16px; /* Tamaño de fuente del texto del botón */
+  margin: 4px 2px; /* Agregar margen */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre el botón */
+}
